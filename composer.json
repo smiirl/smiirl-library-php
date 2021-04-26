@@ -1,5 +1,5 @@
 {
-    "name": "smiirl/custom-library",
+    "name": "smiirl/smiirl-sdk-php",
     "description": "A composer package to interact with Smiirl custom counters",
     "type": "library",
     "require": {
