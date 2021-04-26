@@ -1,0 +1,25 @@
+{
+    "name": "smiirl/custom-library",
+    "description": "A composer package to interact with Smiirl custom counters",
+    "type": "library",
+    "require": {
+        "php": "^7.0",
+        "ext-curl": "^7.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adrien Vieilleribiere",
+            "email": "adrien@smiirl.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "SmiirlLibrary": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
