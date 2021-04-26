@@ -1,10 +1,17 @@
 <?php
 
-namespace SmiirlLibrary;
+namespace Smiirl;
 
 
-class SmiirlLibraryPhp
+class SmiirlSdkPhp
 {
+
+    private $mode;
+
+    public function __construct($mode = 'DEV')
+    {
+        $this->mode = $mode;
+    }
 
     public function pushNumberOnCounter($counterMac, $counterToken, $numberToDisplay)
     {
@@ -14,25 +21,17 @@ class SmiirlLibraryPhp
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $result = curl_exec($ch);
         curl_close($ch);
-        $resultParsed = json_decode($result);
-
-        if (is_object($resultParsed) && property_exists($resultParsed, 'status') && $resultParsed->status == 200) {
-            //echo "number successfully pushed"; var_dump($result);
-            return 0;
-        } else {
-            //echo "number push failed"; var_dump($result);
-            return -1;
-        }
+        return $result;
     }
 
     public function jsonUrl($numberToDisplay)
     {
         header('Access-Control-Allow-Origin: *');
         header('Content-Type: application/json');
-        echo json_encode(['number' => intval($numberToDisplay)]);
+        echo json_encode(["number" => intval($numberToDisplay)]);
     }
 
-    public static function listCurlUrlAccessParameters($url)
+    public function listCurlUrlAccessParameters($url)
     {
         $urlExploded = explode("/", $url);
         if (isset($urlExploded[3], $urlExploded[5])) {
