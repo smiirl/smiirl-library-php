@@ -17,8 +17,9 @@
         }
     ],
     "autoload": {
-        "psr-0": {
-            "SmiirlLibrary": "src/"
+        "psr-4": {
+            "SmiirlLibrary\\": "src/",
+            "Vendor\\Namespace\\": ""
         }
     },
     "minimum-stability": "dev"
