@@ -1,5 +1,5 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php'; // Autoload files using Composer autoload
-use SmiirlLibrary\SmiirlLibraryPhp;
+use Smiirl\SmiirlSdkPhp;
 
-print_r(SmiirlLibraryPhp::listCurlUrlAccessParameters("http://api.smiirl.com/myMacAdressHere/set-number/MyTokenThere/54321"));
+print_r(SmiirlSdkPhp::listCurlUrlAccessParameters("http://api.smiirl.com/myMacAdressHere/set-number/MyTokenThere/54321"));

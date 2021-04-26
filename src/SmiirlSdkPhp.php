@@ -1,9 +1,9 @@
 <?php
 
-namespace SmiirlLibrary;
+namespace Smiirl;
 
 
-class SmiirlLibraryPhp
+class SmiirlSdkPhp
 {
 
     public function pushNumberOnCounter($counterMac, $counterToken, $numberToDisplay)
