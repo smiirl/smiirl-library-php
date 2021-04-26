@@ -18,7 +18,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "SmiirlLibrary\\": "src/",
+            "Smiirl\\": "src/",
             "Vendor\\Namespace\\": ""
         }
     },
