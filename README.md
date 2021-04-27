@@ -12,7 +12,7 @@ The **Smiirl Library for PHP** makes it easy for developers to interact with Smi
    Smiirl SDK for PHP. The SDK is available via [Packagist] under the
    [`smiirl/smiirl-library-php`][install-packagist] package. If Composer is installed globally on your system, you can run the following in the base directory of your project to add the SDK as a dependency:
    ```
-   composer require smiirl/smiirl-sdk-php
+   composer require smiirl/smiirl-library-php
    ```
 
 ## How does the Custom Counter works
