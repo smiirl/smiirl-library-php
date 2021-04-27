@@ -1,6 +1,6 @@
 {
     "name": "smiirl/smiirl-sdk-php",
-    "description": "A composer package to interact with Smiirl custom counters",
+    "description": "A composer package to interact with Smiirl Objects",
     "type": "library",
     "require": {
         "php": "^7.0",
