@@ -1,16 +1,16 @@
-# Smiirl SDK for PHP
+# Smiirl Library for PHP
 
 The **Smiirl Library for PHP** makes it easy for developers to interact with Smiirl Custom Counters in their PHP code, 
 
 ## Getting Started
 
-1. **Minimum requirements** – To run the SDK, your system will need to meet the
+1. **Minimum requirements** – To run the library, your system will need to meet the
    minimum requirements, including having **PHP >= 7.0**.
    We highly recommend having it compiled with the cURL extension and cURL
    7.16.2+ compiled with a TLS backend (e.g., NSS or OpenSSL).
-1. **Install the SDK** – Using [Composer] is the recommended way to install the
-   Smiirl SDK for PHP. The SDK is available via [Packagist] under the
-   [`smiirl/smiirl-library-php`][install-packagist] package. If Composer is installed globally on your system, you can run the following in the base directory of your project to add the SDK as a dependency:
+1. **Install the library** – Using [Composer] is the recommended way to install the
+   Smiirl Library for PHP. The library is available via [Packagist] under the
+   [`smiirl/smiirl-library-php`][install-packagist] package. If Composer is installed globally on your system, you can run the following in the base directory of your project to add the library as a dependency:
    ```
    composer require smiirl/smiirl-library-php
    ```
