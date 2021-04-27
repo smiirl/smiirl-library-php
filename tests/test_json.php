@@ -1,8 +1,6 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php'; // Autoload files using Composer autoload
-use Smiirl\SmiirlSdkPhp;
-$smiirlSdk = new SmiirlSdkPhp();
+use Smiirl\Counter;
 
-
-$smiirlSdk->jsonUrl("424242");
+Counter::jsonResponse("424242");
 
