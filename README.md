@@ -48,5 +48,7 @@ $counter = new Counter($mac, $token);
 $counter->push(54321);
 ```
 
+## Custom Counters
 
+Smiirl Custom Counters are available on our website https://www.smiirl.com.
 
