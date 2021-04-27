@@ -1,4 +1,4 @@
-# Smiirl SDK for PHP - Version 1
+# Smiirl SDK for PHP
 
 The **Smiirl SDK for PHP** makes it easy for developers to interact with Smiirl Custom Counters in their PHP code, 
 
