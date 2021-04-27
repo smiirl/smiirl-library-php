@@ -21,21 +21,25 @@ class Counter
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $result = curl_exec($ch);
         curl_close($ch);
-        
+
         return $result;
     }
 
-    private function normalize($number) {
+    static private function normalize($number)
+    {
         return intval($number);
     }
 
     public function push($number)
     {
-        if($this->mac === null || $this->token === null)
-        {
+        if ($this->mac === null || $this->token === null) {
             return '{"error":"identify_your_counter_correctly"}';
         }
-        $url = "http://api.smiirl.com/" . $this->mac?:'' . "/set-number/" . $this->token?:'' . "/" . $this->normalize($number);
+        $url = "http://api.smiirl.com/"
+            . ($this->mac ? $this->mac : '')
+            . "/set-number/"
+            . ($this->token?$this->token:'')
+            . "/" . $this->normalize($number);
         return $this->request($url);
     }
 
@@ -43,7 +47,7 @@ class Counter
     {
         header('Access-Control-Allow-Origin: *');
         header('Content-Type: application/json');
-        echo json_encode(["number" => $this->normalize($number)]);
+        echo json_encode(["number" => self::normalize($number)]);
     }
 }
 

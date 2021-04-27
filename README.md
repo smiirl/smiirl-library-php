@@ -1,6 +1,6 @@
 # Smiirl SDK for PHP
 
-The **Smiirl SDK for PHP** makes it easy for developers to interact with Smiirl Custom Counters in their PHP code, 
+The **Smiirl Library for PHP** makes it easy for developers to interact with Smiirl Custom Counters in their PHP code, 
 
 ## Getting Started
 
@@ -10,7 +10,7 @@ The **Smiirl SDK for PHP** makes it easy for developers to interact with Smiirl 
    7.16.2+ compiled with a TLS backend (e.g., NSS or OpenSSL).
 1. **Install the SDK** – Using [Composer] is the recommended way to install the
    Smiirl SDK for PHP. The SDK is available via [Packagist] under the
-   [`smiirl/smiirl-sdk-php`][install-packagist] package. If Composer is installed globally on your system, you can run the following in the base directory of your project to add the SDK as a dependency:
+   [`smiirl/smiirl-library-php`][install-packagist] package. If Composer is installed globally on your system, you can run the following in the base directory of your project to add the SDK as a dependency:
    ```
    composer require smiirl/smiirl-sdk-php
    ```
@@ -21,7 +21,9 @@ A Smiirl Custom Counter could be display a number via 2 methods: JSON & PUSH.
 
 ### JSON: output a valid JSON
 
-The JSON method consists in exposing a valid endpoint that the counter will monitor. For example, if you set the counter to monitor this URL https://api.smiirl.com/number, your counter will display 1. For this method, you need a webserver to host your code.
+The JSON method consists in exposing a valid endpoint that the counter will monitor. 
+For instance, if you set the counter to monitor this URL https://api.smiirl.com/number, your counter will display 1. 
+For this method, you need a webserver to host your code.
 
 **Example:**
 
