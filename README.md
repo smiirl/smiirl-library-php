@@ -27,6 +27,7 @@ The JSON method consists in exposing a valid endpoint that the counter will moni
 
 ```php
 <?php
+require 'vendor/autoload.php';
 use Smiirl\Counter;
 
 Counter::jsonResponse(12345);
@@ -39,6 +40,7 @@ The PUSH method consists in sending a number to Smiirl API which will display th
 **Example:**
 ```php
 <?php
+require 'vendor/autoload.php';
 use Smiirl\Counter;
 
 $mac = "e08e00000000";
