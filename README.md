@@ -49,7 +49,10 @@ $mac = "e08e00000000";
 $token = "abcdef123456";
 
 $counter = new Counter($mac, $token);
+$counter->reset();
 $counter->push(54321);
+$counter->add(10);
+$counter->add(-10);
 ```
 
 ## Custom Counters
