@@ -37,11 +37,32 @@ class Counter
         }
         $url = "http://api.smiirl.com/"
             . ($this->mac ? $this->mac : '')
-            . "/set-number/"
-            . ($this->token?$this->token:'')
-            . "/" . $this->normalize($number);
+            . "/number/set?"
+            . "token="
+            . ($this->token ? $this->token : '')
+            . "&number=" . $this->normalize($number);
         return $this->request($url);
     }
+
+    public function add($number)
+    {
+        if ($this->mac === null || $this->token === null) {
+            return '{"error":"identify_your_counter_correctly"}';
+        }
+        $url = "http://api.smiirl.com/"
+            . ($this->mac ? $this->mac : '')
+            . "/number/add?"
+            . "token="
+            . ($this->token ? $this->token : '')
+            . "&number=" . $this->normalize($number);
+        return $this->request($url);
+    }
+
+    public function reset()
+    {
+        return $this->push(0);
+    }
+
 
     static public function jsonResponse($number)
     {
